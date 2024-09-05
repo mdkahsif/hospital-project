@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .facebook:hover{
+            color:blue;
+        }
+        .twitter:hover{
+            color:darkcyan;
+        }
+        .instagram:hover{
+            color:orangered;
+        }
+        main{
+          width: 100%;
+          background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(banner.jpg);
+          height: 100vh;
+          background-size: 100% 100%;
+
+        }
+        nav a{
+          text-decoration: none;
+          color: white;
+          margin-right: 35px;
+          padding: 10px;
+          border-radius: 10px;
+        }
+        .nav-item a:hover{
+          /* background: rgba(0,0,0,0.3); */
+          border-left: 3px solid aqua;
+          border-bottom: 3px solid aqua;
+          transition: 0.3s;
+          color: aqua;
+          box-shadow: 0px 0px 2px 2px rgba(0, 255, 255, 0.347);
+        }
+        .section-1 .carousel-item 
+        {
+          color: white;
+          border-left: 5px solid aqua;
+          padding-left: 10px;
+        }
+        .card:hover{
+          background-color: rgba(111, 209, 176, 0.848);
+        }
+
+        .section-4{
+          width: 100%;
+          padding-bottom: 160px;
+          background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(pexels-olly-3952132.jpg);
+          background-size: cover;
+          margin-top: 20px;
+          background-repeat: no-repeat;
+          
+
+        }
+        .user input[type="email"] {
+          margin: 1.5em 0em;
+          width: 50%;
+          padding: 11px;
+          outline: none;
+          font-size: 14px;
+          border: 1px solid #000;
+          color: #000000;
+          letter-spacing: 2px;
+          text-align: center;
+        }
+
+        .contact-top iframe {
+          height: 290px;
+        }
+     
+        .contact-top iframe {
+          width: 100%;
+          height: 430px;
+          border: none;
+        }
+
+       .social-media a{
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          width: 40px;
+          height: 40px;
+          background: transparent;
+          border: 2px solid #0ef;
+          font-size: 20px;
+          border-radius: 50%;
+          text-decoration: none;
+          margin: 10px 15px 30px 0;
+          transition: .5s ease;
+          color: aqua;     
+        }
+        .social-media a:hover{
+          background-color: #0ef;
+          color: #fff;
+          box-shadow: 0 0 20px #0ef;
+        }
+        .aaa:hover{
+          color: #00e4c1;
+        }
+        
+    </style>
+</head>
+<body>
+  
+    <div class="section-1 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 text-white  py-2 text-center text-md-start  ">
+                    <i class="fa-brands fa-facebook pe-3 facebook "></i>
+                    <i class="fa-brands fa-twitter pe-3 twitter"></i>
+                    <i class="fa-brands fa-instagram pe-3 instagram"></i>
+
+                </div>
+                <div class="col-lg-6 col-md-6 py-2 text-md-end text-center">
+                    <i class="fa-solid fa-envelope me-1" style="color: rgb(0, 228, 193);;"></i><span class="text-white me-5"> info@example.com</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar start from here-->
+    <main>
+    <nav class="navbar navbar-expand-lg " style="background: rgba(0,0,0,0.3);">
+        <div class="container">
+          <a class="navbar-brand fs-3" style="font-style: italic; font-weight: 500; color: white;" href="#">Medically</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars text-white"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="fs-5" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class=" fs-5" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="fs-5 " href="Facilities.html">Facilities</a>
+              </li>
+              <li class="nav-item">
+                <a class="fs-5" href="#">Laboratory</a>
+              </li>
+              <li class="nav-item">
+                <a class="fs-5" href="#">Clients</a>
+              </li>
+              <li class="nav-item">
+                <a class="fs-5" href="#">Contact</a>
+              </li>
+           
+            
+            </ul>
+          
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar end from here-->
+      
+      <!-- Section-1 start from here-->
+<div class="section-1">
+<div class="container">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="height: 90vh; display: flex; align-items: center;">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-lg-8">
+            <h4 style="font-size: 60px;">Welcome To Hospital</h4>
+            <p>Vivamus sed porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+              egestas.Sed lorem enim, rutrum quis diam nec.</p>
+          </div>
+          <div class="col-lg-4">
+            <button class="btn btn-outline-info py-2 px-3 mt-5 ms-5" style="color: white;">Read More</button>
+          </div>
+        </div>
+        </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-8">
+            <h4 style="font-size: 60px;">Get YourSelf Fixed</h4>
+            <p>Vivamus sed porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+              egestas.Sed lorem enim, rutrum quis diam nec.</p>
+          </div>
+          <div class="col-lg-4">
+            <button class="btn btn-outline-info py-2 px-3 mt-5 ms-5" style="color: white;">Read More</button>
+          </div>
+        </div>
+        </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-8">
+            <h4 style="font-size: 60px;">Better Health Care</h4>
+            <p>Vivamus sed porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+              egestas.Sed lorem enim, rutrum quis diam nec.</p>
+          </div>
+          <div class="col-lg-4">
+            <button class="btn btn-outline-info py-2 px-3 mt-5 ms-5" style="color: white;">Read More</button>
+          </div>
+        </div>
+        </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </main>
+    <!-- Section-1 end from here-->
+
+    <!-- Section-2 start from here-->
+    <div class="section-2">
+      <div class="container  mt-5" >
+        <h5 class="text-center" style="color: gray;">Visit</h5>
+        <h1 class="text-center" style="font-weight: 600;">Welcome to our Medication</h1>
+        <div class="row">
+          <div class="col-lg-6 mt-5">
+            <img src="banner2.jpg" class="img-fluid" style="border-radius: 7px;">
+          </div>
+          <div class="col-lg-6 mt-5">
+            <h2 class="pt-5" style="color: orangered;">Caring for the growing needs of our community.</h2>
+            <h6 class="pt-2" style="font-style: italic; font-weight: 400;">Best of Care, Close to Home..</h6>
+            <p class="pt-1" style="color: gray; font-style: oblique;">Lorem ipsum dolor sit amet Neque porro quisquam est qui dolorem Lorem int ipsum dolor sit amet when an unknown printer took a galley of type.Vivamus id tempor felis. Cras sagittis mi sit amet malesuada mollis. Mauris porroinit consectetur cursus tortor vel interdum. Suspendisse interdum velit vel qu dapibus condimentum. Pellentesque consequat.</p>
+            <button class="btn btn-primary" style="box-shadow: 0px 0px 0px 1px blue;">Read More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section-2 end from here-->
+    
+    <!-- Section-3 start from here-->
+    <div class="section-3 text-center mt-5" >
+      <div class="container">
+        <h2 class="">Therapies & Treatments</h2>
+        <h6 style="color: gray; font-weight: 400;">We offer extensive medical procedures to outbound and inbound patients.</h6>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mt-5">
+          <div class="card" style="box-shadow: 0px 0px 7px 5px gray;" data-aos="flip-left">
+            <i class="fa-solid fa-heart-pulse pt-5  fs-1" style="color: #146eb4;;"></i>
+            <h3 class="pt-3" style="color: #ff9900;">Anxiety</h3>
+            <p class="" style="line-height: 30px;">Lorem ipsum dolor sit amet,<br> Sed ut perspiciatis unde <br> omnis iste natus error sit <br> voluptatem</p>
+            <div class="card-body">
+            </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-5">
+            <div class="card" style="box-shadow: 0px 0px 7px 5px gray;" data-aos="flip-left">
+              <i class="fa fa-user-md pt-5 fs-1" style="color: #146eb4;"></i>
+              <h3 class="pt-3" style="color: #ff9900;">Executive Coaching</h3>
+              <p class="" style="line-height: 30px;">Lorem ipsum dolor sit amet,<br> Sed ut perspiciatis unde <br> omnis iste natus error sit <br> voluptatem</p>
+              <div class="card-body">
+              </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mt-5">
+              <div class="card" style="box-shadow: 0px 0px 7px 5px gray;" data-aos="flip-left">
+                <i class="fa fa-wheelchair-alt pt-5 fs-1" style="color: #146eb4;"></i>
+                <h3 class="pt-3" style="color: #ff9900;">Depression</h3>
+                <p class="" style="line-height: 30px;">Lorem ipsum dolor sit amet,<br> Sed ut perspiciatis unde <br> omnis iste natus error sit <br> voluptatem</p>
+                <div class="card-body">
+                </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 mt-5">
+                <div class="card" style="box-shadow: 0px 0px 7px 5px gray;"  data-aos="flip-right">
+                  <i class="fa fa-medkit pt-5 fs-1" style="color: #146eb4;"></i>
+                  <h3 class="pt-3" style="color: #ff9900;">Relationships</h3>
+                  <p class="" style="line-height: 30px;">Lorem ipsum dolor sit amet,<br> Sed ut perspiciatis unde <br> omnis iste natus error sit <br> voluptatem</p>
+                  <div class="card-body">
+                  </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mt-5">
+                  <div class="card" style="box-shadow: 0px 0px 7px 5px gray;"  data-aos="flip-right">
+                    <i class="fa-solid fa-hospital fs-1 pt-5" style="color: #146eb4;"></i>
+                    <h3 class="pt-3" style="color: #ff9900;">Stress Management</h3>
+                    <p class="" style="line-height: 30px;">Lorem ipsum dolor sit amet,<br> Sed ut perspiciatis unde <br> omnis iste natus error sit <br> voluptatem</p>
+                    <div class="card-body">
+                    </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6 mt-5">
+                    <div class="card" style="box-shadow: 0px 0px 7px 5px gray;"  data-aos="flip-right">
+                      <i class="fa-solid fa-truck-medical fs-1 pt-5" style="color: #146eb4;"></i>
+                      <h3 class="pt-3" style="color: #ff9900;">Support Group</h3>
+                      <p class="" style="line-height: 30px;">Lorem ipsum dolor sit amet,<br> Sed ut perspiciatis unde <br> omnis iste natus error sit <br> voluptatem</p>
+                      <div class="card-body">
+                      </div>
+                      </div>
+                    </div>
+        </div>
+      </div>
+    </div>
+  <!-- Section-3 end from here-->
+
+   
+  <!-- Section-4 start from here-->
+    <div class="section-4">
+      <div class="container mt-5 text-center text-white">
+        <h1 class="pt-5" style="font-size: 50px;">What Clients Say</h1>
+        <p class="pt-2" style="font-size: 25px; color: black;">We offer extensive medical procedures to outbound and inbound patients...</p>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner py-5 mt-5" style="background: rgba(0,0,0,0.3);">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-3 ">
+             <img src="https://media.istockphoto.com/id/1387249698/photo/portrait-of-female-doctor-on-white-background-stock-photo.jpg?s=1024x1024&w=is&k=20&c=EW5FLI61VyA4yICOUcmFmZRrvrwOR-JxkSBF9pxtTvs=" class="img-fluid" style="width: 150px; height: 150px; border-radius: 100px;"> 
+            </div>
+            <div class="col-lg-7 mt-4 me-5">
+                <p>Maecenas quis neque libero. Class aptent taciti.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                  auctor nec lacus ut tempor. Mauris.</p>
+                  <h6>Sara Lisbon</h6>
+              </div>
+              <div class="col-lg-1"></div>
+           
+            </div>
+          </div>
+
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-3">
+              <img src="https://p.w3layouts.com/demos_new/template_demo/23-01-2018/new_clinic-demo_Free/1754296759/web/images/ts3.jpg" class="img-fluid" style="width: 150px; height: 150px; border-radius: 100px;" >
+            </div>
+              
+            <div class="col-lg-7 mt-4 me-5">
+              <p>Maecenas quis neque libero. Class aptent taciti.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                auctor nec lacus ut tempor. Mauris.</p>
+                <h6>Alice Williams</h6>
+            </div>
+            <div class="col-lg-1"></div>
+            </div>
+            </div>
+
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-3">
+              <img src="https://p.w3layouts.com/demos_new/template_demo/23-01-2018/new_clinic-demo_Free/1754296759/web/images/2.jpg" class="img-fluid" style="width: 150px; height: 150px; border-radius: 100px;">
+            </div>
+             <div class="col-lg-7 mt-4 me-5">
+              <p>Maecenas quis neque libero. Class aptent taciti.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                auctor nec lacus ut tempor. Mauris.</p>
+                <h6>Alice Williams</h6>
+            </div>
+            <div class="col-lg-1"></div>
+          </div>
+
+
+        </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  <!-- Section-4 end from here-->
+
+
+   <!-- Section-5 start from here-->  
+    <div class="section-5 mt-4" style="background-color: #337ab7;">
+      <div class="container  text-center">
+        <h1 class="pt-5" style="font-size: 70px;">Subscribe</h1>
+        <p style="font-size: 22px;">enean leo ligula, porttitor eu, consequat vitae, eleifend ac,</p>
+        <div class="user">
+        <input type="email" name="Email" placeholder="Email Address" required="">
+      </div>
+     <button class="btn btn-outline-info text-white mb-5">Subscribe</button>
+    </div>
+    </div>
+  <!-- Section-5 end from here-->  
+
+  <!-- Section-6 start from here-->
+    <div class="section-6">
+      <div class="container mt-5">
+        <h1 class="text-center" style="color: #146eb4;" >CONTACT US</h1>
+        <div class="row">
+          <div class="col-lg-7 col-md-6 mt-5">
+            <h4>Contact Address</h4>
+            <h6 class="pt-3" style="color: gray; line-height: 30px;">Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. <br> Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellu</h6>
+            
+            <h4 class="pt-3">Address:</h4>
+            <i class="fa-solid fa-house pt-2" style="color: #00e4c1;"></i><span class="ms-2 pt-2" style="color: gray;"> 333 Broome St New York, NY 10002</span>
+            
+            <h4 class="pt-4">Phones:</h4>
+            <i class="fa-solid fa-phone-volume pt-2" style="color: #00e4c1;"></i><span class="ms-2 pt-2" style="color: gray;">+9900887766</span><br>
+            <i class="fa-solid fa-phone-volume pt-3" style="color: #00e4c1;"></i><span class="ms-2 pt-3" style="color: gray;">+11 222 333</span>
+
+            <h4 class="pt-4">Email:</h4>
+            <i class="fa-solid fa-envelope pt-2" style="color: #00e4c1;"></i><span class="ms-2 pt-2" style="color: gray;">mail@example.com</span>
+          </div>
+          <div class="col-lg-5 col-md-6 mt-5 contact-top">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.9503398796587!2d-73.9940307!3d40.719109700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a27e2f24131%3A0x64ffc98d24069f02!2sCANADA!5e0!3m2!1sen!2sin!4v1441710758555" allowfullscreen=""></iframe>
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+  <!-- Section-6 end from here-->
+
+  <!-- Section-7 start from here-->
+    <div class="section-7 bg-dark">
+      <div class="container mt-5 mb-1">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 text-white mt-5">
+            <h1 class="ms-4">Medically</h1>
+            <h5 class="ms-4 pt-3" style="color: #00e4c1;">Lorem  Ipsum</h5>
+            <div class="d-flex icon justify-content-start p-3">
+              <div class="social-media">
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>  
+              </div>
+          </div>
+
+          </div>
+          <div class="col-lg-3 col-md-6 text-white mt-5">
+            <h1>About us</h1>
+            <h6 class="pt-3" style="line-height: 30px; font-style: italic;color: #00e4c1;">enim. Aliquam lorem ante,<br> dapibus in,Aliquam lorem ante</h6>
+          </div>
+
+          <div class="col-lg-3 text-white mt-5">
+            <h1>Links</h1>
+            <h6 class="pt-3 aaa">Home</h6>
+            <div class="">
+            <h6 class="aaa">About</h6>
+            <h6 class="aaa">Facilities</h6>
+            <h6 class="aaa">Laboratory</h6>
+            <h6 class="aaa">Contact</h6>
+          </div>
+          </div>
+          
+          <div class="col-lg-3 text-white mt-5">
+            <h1>Contact</h1>
+            <i class="fa-solid fa-location-dot pt-3" style="color: #00e4c1;"></i><span class="ms-2 pt-3">333 Broome St New York</span><br>
+            <i class="fa-solid fa-phone pt-3" style="color: #00e4c1;"></i><span class="pt-3 ms-2">Call us:+9900887766</span>
+            <button class="btn btn-outline-info mt-4" style="width: 100%; color: white;">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Section-7 end from here-->
+      
+
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</html>

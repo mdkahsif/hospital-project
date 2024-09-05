@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          nav a{
+          text-decoration: none;
+          color: white;
+          margin-right: 35px;
+          padding: 10px;
+          border-radius: 10px;
+        }
+        .nav-item a:hover{
+          /* background: rgba(0,0,0,0.3); */
+          border-left: 3px solid aqua;
+          border-bottom: 3px solid aqua;
+          transition: 0.3s;
+          color: aqua;
+          box-shadow: 0px 0px 2px 2px rgba(0, 255, 255, 0.347);
+        }
+        .section-1 {
+        width: 100%;
+        /* height: 70vh; */
+        background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(pexels-weverton-oliveira-927931218-20217787.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-position-y:  50%;
+      background-attachment: fixed;
+      padding-bottom: 100px;
+      padding-top: 100px;
+        }
+        a{
+            text-decoration: none;
+        }
+
+
+        .button {
+  padding: 15px 20px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  z-index: 1;
+}
+
+.button::after,
+.button::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all .4s;
+}
+
+.button::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #28282d;
+  border-radius: 10px;
+}
+
+.button::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+.button:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+
+.button:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.button:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}
+
+.card-1
+{
+    background:linear-gradient(to right ,rgba(171, 170, 170, 0.362) 50%,black  50%);
+    background-size: 200% 100%;
+    background-position: right;
+
+}
+.card-1:hover{
+    /* background: none; */
+    background-position: left;
+    transition: 2s;
+}
+
+    </style>
+</head>
+<body>
+  <!-- Navbar start from here-->
+    <nav class="navbar navbar-expand-lg " style="background: rgba(0,0,0,0.3);">
+        <div class="container">
+          <a class="navbar-brand fs-3" style="font-style: italic; font-weight: 500; color: white;" href="#">Medically</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars text-white"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="fs-5" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class=" fs-5" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="fs-5 " href="Facilities.html">Facilities</a>
+              </li>
+              <li class="nav-item">
+                <a class="fs-5" href="#">Laboratory</a>
+              </li>
+              <li class="nav-item">
+                <a class="fs-5" href="#">Clients</a>
+              </li>
+              <li class="nav-item">
+                <a class="fs-5" href="#">Contact</a>
+              </li>
+           
+            
+            </ul>
+          
+          </div>
+        </div>
+      </nav>
+  <!-- Navbar end from here-->
+
+  <!-- Section-1 start from here-->
+      <div class="section-1">
+        <div class="container">
+        <h1 class="pt-4" style="font-size: 89px; color: aqua;">Facilities</h1>
+        <span class="px-5 py-2 rounded-pill" style="background: rgba(173, 171, 171, 0.334);">
+        <span class="breadcrumbs-custom-path AllBreadcrumbs text-white">
+            <a href="https://wp.w3layouts.com/dentition" rel="nofollow" class="text-white" style="font-size: 20px;">Home</a>&nbsp;&nbsp;»&nbsp;&nbsp;Facilities page      </span>
+        </span>    
+    </div>
+      </div>
+  <!-- Section-1 end from here-->
+
+  <!-- Section-2 start from here-->
+      <div class="section-2">
+        <div class="container mt-5">
+            <h1 class="text-center">Our Facilities</h1>
+            <h6 class="text-center">Quality Care...</h6>
+            <button class="button mt-4" style="width: 30%;">Department 1
+            </button>
+            <button class="button mt-4 ms-4" style="width: 30%;">Department 2
+            </button>
+            <button class="button mt-4 ms-4" style="width: 30%;">Department 3
+            </button>
+
+            <div class="row">
+                <div class="col-4 mt-5">
+                    <div class=" card ">
+                 <img src="pexels-mart-production-7088524.jpg" alt="" style="width: 95%;" >  
+                 <div class="card-img-overlay card-1">
+                 </div> 
+                </div>
+                </div>
+                <div class="col-4 mt-5">
+                    <img src="pexels-artempodrez-5726835.jpg" alt="" style="width: 95%; height: 100%;">   
+                   </div>
+                   <div class="col-4 mt-5">
+                    <img src="pexels-pixabay-52527.jpg" alt="" style="width: 95%; height: 100%;">   
+                   </div>
+            </div>
+        </div>
+      </div>
+  <!-- Section-2 end from here-->
+</body>
+       <script>
+        download=()=>{
+          
+          
+          var timeleft =0
+          
+          let timer = setInterval(function(){
+              timeleft++
+              
+              countdown.innerHTML = timeleft ;
+              if(timeleft>=1394){
+                  clearInterval(timer)
+                
+            }
+
+          },)
+        }
+        download()
+       </script>
+</html>
